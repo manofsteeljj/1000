@@ -84,7 +84,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 1000 Words Journey. All rights reserved.</p>
+            <p>&copy; 2025 1000 Words Journey. I Love You Guys So Much!</p>
         </div>
     </footer>
 
