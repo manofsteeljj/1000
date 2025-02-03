@@ -44,7 +44,8 @@ footer {
     width: 250px;
     background: #fcf1dd;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow */
+    border-radius: 20px;
 }
 
 .sidebar ul {
@@ -73,7 +74,7 @@ footer {
     flex: 1;
     margin-left: 20px;
     background: #fdf7e3;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* shadow */
     border-radius: 8px;
     padding: 20px;
 }
@@ -86,7 +87,8 @@ footer {
     padding: 20px;
     border-left: 4px solid #facf85;
     background: #fcf1dd;
-    border-radius: 8px;
+    border-radius: 20px; /* rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .section.visible {
@@ -116,8 +118,38 @@ footer {
     font-style: italic;
 }
 
+
+/* Responsiveness  */
 @media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .sidebar {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .story {
+        margin-left: 0; 
+    }
+
     .placeholder {
-        height: 200px;
+        height: 200px; 
+    }
+
+    header h1 {
+        font-size: 2rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar a {
+        font-size: 0.9rem; 
+    }
+
+    .section {
+        padding: 15px; 
+        font-size: 0.9rem; 
     }
 }
