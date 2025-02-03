@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -6,26 +7,77 @@ body {
     color: #3e4c59;
     line-height: 1.6;
 }
-.story {
-    max-width: 800px;
-    margin: 40px auto;
+
+
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+
+footer {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
+}
+
+
+.sidebar {
+    width: 250px;
+    background: #fcf1dd;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #3e4c59;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: #ff7e5f;
+}
+
+
+.story {
+    flex: 1;
+    margin-left: 20px;
     background: #fdf7e3;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid #e2d7c9;
+    padding: 20px;
 }
-.story::before {
-    content: "1000 Words Journey";
-    display: block;
-    font-size: 2rem;
-    text-align: center;
-    color: #3e4c59;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+
 .section {
     opacity: 0;
     transform: translateY(50px);
@@ -36,10 +88,12 @@ body {
     background: #fcf1dd;
     border-radius: 8px;
 }
+
 .section.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
 .placeholder {
     width: 100%;
     height: 300px;
@@ -50,6 +104,7 @@ body {
     display: block;
     object-fit: contain; 
 }
+
 .placeholder::after {
     content: 'Image Placeholder';
     display: flex;
@@ -66,4 +121,3 @@ body {
         height: 200px;
     }
 }
-
